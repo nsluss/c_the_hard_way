@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]){
-	int areas[] = {10,12,13,14,20};
-	char name[] = "Zed";
+	int areas[] = {"d","d","d","d"};
+	char name[] = {1,2,3};
+	char test[] = "a";
 	char full_name[] = {
 		'Z','e',' ','\0'
 	};
@@ -17,5 +18,7 @@ int main(int argc, char *argv[]){
 	printf("The size of full_name (char[]): %ld\n",sizeof(full_name));
 	printf("The number of chars: %ld\n",sizeof(full_name) / sizeof(char));
 	printf("name=\"%s\" and full_name=\"%s\"\n",name,full_name);
+
+	printf("\n %ld",sizeof(name));	
 	return 0;
 }
